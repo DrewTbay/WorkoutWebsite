@@ -9,7 +9,7 @@ hostApp.config(function($routeProvider) {
 	$routeProvider
 
 	// route for the home page
-	.when('', {
+	.when('/home', {
 		templateUrl : 'app/home/home.html',
 		controller : 'mainController'
 	})
