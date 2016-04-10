@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="hostApp">
+<head>
+<meta charset=utf-8>
+<title>Hello Website!</title>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular-route.min.js"></script>
+
+<script src="/app/app.js"></script>
+
+</head>
+
+<!-- define angular controller -->
+<body ng-controller="mainController">
+<header>
+<nav class="navbar navbar-default">
+<div class="container">
+<div class="navbar-header">
+<a class="navbar-brand" href="/">Home Web Server</a>
+</div>
+
+<ul class="nav navbar-nav navbar-right">
+<li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+<li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
+</ul>
+</div>
+</nav>
+</header>
+
+<!-- Main Content -->
+<div id="main">
+<div class="text-center">
+{{message}}
+<p />
+</div>
+
+<!-- angular templating -->
+<div ng-view></div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center">
+testy
+</footer>
+
+</body>
+</html>
