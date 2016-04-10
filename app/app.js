@@ -9,9 +9,15 @@ hostApp.config(function($routeProvider) {
 	$routeProvider
 
 	// route for the home page
-	.when('/home', {
+	.when('/', {
 		templateUrl : 'app/home/home.html',
 		controller : 'mainController'
+	})
+	
+	// route for the home page
+	.when('/home', {
+		templateUrl : 'app/home/home.html',
+		controller : 'homeController'
 	})
 
 	// route for the about page
@@ -24,7 +30,13 @@ hostApp.config(function($routeProvider) {
 // create the controller and inject Angular's $scope
 hostApp.controller('mainController', function($scope) {
 	// create a message to display in our view
-	$scope.message = 'Welcome to our home web server!';
+	$scope.message = 'Welcome to my Workout server! grrrrrrr....';
+});
+
+// create the controller and inject Angular's $scope
+hostApp.controller('homeController', function($scope) {
+	// create a message to display in our view
+	$scope.message = 'This is the home page';
 });
 
 hostApp.controller('aboutController', function($scope) {
