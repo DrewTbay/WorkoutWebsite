@@ -16,45 +16,45 @@
 
 <!-- define angular controller -->
 <body ng-controller="mainController">
-<header>
-	<div class="container">
-		<div class="navbar navbar-default navbar-static-top" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="nav navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class = "icon-bar"></span>
-						<span class = "icon-bar"></span>
-						<span class = "icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#/">Workout Web Server</a>
-				</div>
-				<!-- Main Website Menu -->
-				<div class="collapse navbar-collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#home"><i class="fa fa-home"></i>Home</a></li>
-						<li><a href="#about"><i class="fa fa-shield"></i>About</a></li>
-					</ul>
+	<header>
+		<div class="container">
+			<div class="navbar navbar-default navbar-static-top" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="nav navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class = "icon-bar"></span>
+							<span class = "icon-bar"></span>
+							<span class = "icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#/">Workout Web Server</a>
+					</div>
+					<!-- Main Website Menu -->
+					<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#home"><i class="fa fa-home"></i>Home</a></li>
+							<li><a href="#about"><i class="fa fa-shield"></i>About</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</header>
+	</header>
 
-<!-- Main Content -->
-<div id="main" class="jumbotron">
-	<div class="text-center">
-		{{message}}
+	<!-- Main Content -->
+	<div id="main" class="jumbotron">
+		<div class="text-center">
+			{{message}}
+		</div>
+
+		<!-- angular templating -->
+		<div ng-view>
+		</div>
 	</div>
 
-	<!-- angular templating -->
-	<div ng-view>
-	</div>
-</div>
-
-<!-- Footer -->
-<footer class="text-center">
-Personal Website for keeping track of Workout Progress. This is hosted on my local network on a MEAN stack on Raspberry Pi 2
-</footer>
+	<!-- Footer -->
+	<footer class="text-center">
+	Personal Website for keeping track of Workout Progress. This is hosted on my local network on a MEAN stack on Raspberry Pi 2
+	</footer>
 
 </body>
 </html>
