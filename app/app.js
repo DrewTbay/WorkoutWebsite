@@ -27,7 +27,7 @@ hostApp.config(function($routeProvider) {
 	});
 	
 	// route for the Eccentric Upper page
-	.when('/workouts/eccentricUpper', {
+	.when('/eccentricUpper', {
 		templateUrl : 'app/workouts/eccentricUpper/eccentricUpper.html',
 		controller : 'eccentricUpperController'
 	});
