@@ -13,12 +13,6 @@ hostApp.config(function($routeProvider) {
 		templateUrl : 'app/home/home.html',
 		controller : 'mainController'
 	})
-	
-	// route for the home page
-	.when('/home', {
-		templateUrl : 'app/home/home.html',
-		controller : 'homeController'
-	})
 
 	// route for the about page
 	.when('/about', {
