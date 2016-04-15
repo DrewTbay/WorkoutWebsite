@@ -24,7 +24,7 @@ hostApp.config(function($routeProvider) {
 	.when('/about', {
 		templateUrl : 'app/about/about.html',
 		controller : 'aboutController'
-	});
+	})
 	
 	// route for the Eccentric Upper page
 	.when('/eccentricUpper', {
