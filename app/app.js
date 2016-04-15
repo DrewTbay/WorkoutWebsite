@@ -28,8 +28,8 @@ hostApp.config(function($routeProvider) {
 	
 	// route for the Eccentric Upper page
 	.when('/workouts/eccentricUpper', {
-		templateUrl : 'app//workouts/eccentricUpper/eccentricUpper.html',
-		controller : 'aboutController'
+		templateUrl : 'app/workouts/eccentricUpper/eccentricUpper.html',
+		controller : 'eccentricUpperController'
 	});
 });
 
@@ -47,4 +47,8 @@ hostApp.controller('homeController', function($scope) {
 
 hostApp.controller('aboutController', function($scope) {
 	$scope.message = 'This is the about page.';
+});
+
+hostApp.controller('eccentricUpperController', function($scope) {
+	$scope.message = 'This is the eccentric Upper page.';
 });
