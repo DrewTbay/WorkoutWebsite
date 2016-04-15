@@ -22,7 +22,7 @@ hostApp.config(function($routeProvider) {
 
 	// route for the about page
 	.when('/about', {
-		templateUrl : 'app/about/about.html',
+		templateUrl : 'app/workout/eccentricUpper/eccentricUpper.html',
 		controller : 'aboutController'
 	});
 });
