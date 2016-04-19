@@ -36,7 +36,3 @@ hostApp.controller('mainController', function($scope) {
 hostApp.controller('aboutController', function($scope) {
 	$scope.message = 'This is the about page.';
 });
-
-hostApp.controller('eccentricUpperController', function($scope) {
-	$scope.message = 'Eccentric Upper';
-});
