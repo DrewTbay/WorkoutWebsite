@@ -1,15 +1,15 @@
 <script src="/eccentricUpperApp/eccentricUpperApp.js"></script>
 
-<div class="jumbotron">
-	<h1>Eccentric Upper</h1>
+<div>
+	<h1>{{workoutTitle}}</h1>
 	<div ng-controller="ExampleController">
 		<form name="myForm">
-			<label for="singleSelect"> Single select: </label><br>
-			<select name="singleSelect" ng-model="data.singleSelect">
-				<option value="option-1">Option 1</option>
-				<option value="option-2">Option 2</option>
-			</select>
-			<br>
+			<label for="mySelect">Make a choice:</label>
+			<select name="mySelect" id="mySelect"
+			ng-options="option.name for option in data.availableOptions track by option.id"
+			ng-model="data.selectedOption"></select>
 		</form>
+		<hr>
+		<tt>option = {{data.selectedOption}}</tt><br/>
 	</div>
 </div>

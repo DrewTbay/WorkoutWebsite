@@ -30,7 +30,7 @@ hostApp.config(function($routeProvider) {
 // create the controller and inject Angular's $scope
 hostApp.controller('mainController', function($scope) {
 	// create a message to display in our view
-	$scope.message = 'Welcome to my Workout server! grrrrrrr....';
+	$scope.message = 'Welcome to my Workout server!';
 });
 
 hostApp.controller('aboutController', function($scope) {
