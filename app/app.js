@@ -33,12 +33,6 @@ hostApp.controller('mainController', function($scope) {
 	$scope.message = 'Welcome to my Workout server! grrrrrrr....';
 });
 
-// create the controller and inject Angular's $scope
-hostApp.controller('homeController', function($scope) {
-	// create a message to display in our view
-	$scope.message = 'This is the home page';
-});
-
 hostApp.controller('aboutController', function($scope) {
 	$scope.message = 'This is the about page.';
 });
