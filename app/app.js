@@ -38,5 +38,5 @@ hostApp.controller('aboutController', function($scope) {
 });
 
 hostApp.controller('eccentricUpperController', function($scope) {
-	$scope.message = 'This is the eccentric Upper page.';
+	$scope.workoutTitle = 'Eccentric Upper';
 });
