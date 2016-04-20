@@ -37,6 +37,6 @@ hostApp.controller('aboutController', function($scope) {
 	$scope.message = 'This is the about page.';
 });
 
-//hostApp.controller('eccentricUpperController', function($scope) {
-//	$scope.message = 'Will this get Overwritten?';
-//});
+hostApp.controller('eccentricUpperController', function($scope) {
+	$scope.message = 'Will this get Overwritten?';
+});
