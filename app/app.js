@@ -35,8 +35,8 @@ hostApp.controller('mainController', ['$scope', '$routeParams',
   }]);
 
 // create the controller and inject Angular's $scope
-hostApp.controller('mainController', ['$scope', '$routeParams',
+hostApp.controller('aboutController', ['$scope', '$routeParams',
   function($scope, $routeParams) {
     	// create a message to display in our view
-	$scope.message = 'Welcome to my Workout server!';
+	$scope.message = 'The About Page';
   }]);
