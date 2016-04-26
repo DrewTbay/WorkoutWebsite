@@ -2,7 +2,7 @@
 
 // create the module and name it hostApp
 // also include ngRoute for all our routing needs
-var hostApp = angular.module('hostApp', ['ngRoute']);
+var hostApp = angular.module('hostApp', ['ngRoute','WorkoutControllers']);
 
 // configure our routes
 hostApp.config(function($routeProvider) {
@@ -35,8 +35,4 @@ hostApp.controller('mainController', function($scope) {
 
 hostApp.controller('aboutController', function($scope) {
 	$scope.message = 'This is the about page.';
-});
-
-hostApp.controller('eccentricUpperController', function($scope) {
-	$scope.message = 'Will this get Overwritten?';
 });
