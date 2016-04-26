@@ -5,7 +5,7 @@
 var hostApp = angular.module('hostApp', ['ngRoute','workoutControllers']);
 
 // configure our routes
-hostApp.config(function($routeProvider) {
+hostApp.config(['$routeProvider', function($routeProvider) {
 	$routeProvider
 
 	// route for the home page
@@ -25,4 +25,4 @@ hostApp.config(function($routeProvider) {
 		templateUrl : 'app/workouts/eccentricUpper/eccentricUpper.html',
 		controller : 'eccentricUpperController'
 	});
-});
+}]);
