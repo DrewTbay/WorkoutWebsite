@@ -1,7 +1,8 @@
-var workoutControllers = angular.module('eccentricUpperController', []);
+var workoutControllers = angular.module('workoutControllers', []);
 
 // create the controller and inject Angular's $scope
-workoutControllers.controller('eccentricUpperController', function($scope) {
-	// create a message to display in our view
-	$scope.message = 'Welcome to my Workout server!';
-});
+phonecatControllers.controller('eccentricUpperController', ['$scope', '$routeParams',
+  function($scope, $routeParams) {
+    $scope.message = "This is a test.";
+  }]);
+ 

@@ -2,7 +2,7 @@
 
 // create the module and name it hostApp
 // also include ngRoute for all our routing needs
-var hostApp = angular.module('hostApp', ['ngRoute','WorkoutControllers']);
+var hostApp = angular.module('hostApp', ['ngRoute','workoutControllers']);
 
 // configure our routes
 hostApp.config(function($routeProvider) {
@@ -28,11 +28,15 @@ hostApp.config(function($routeProvider) {
 });
 
 // create the controller and inject Angular's $scope
-hostApp.controller('mainController', function($scope) {
-	// create a message to display in our view
+hostApp.controller('mainController', ['$scope', '$routeParams',
+  function($scope, $routeParams) {
+    	// create a message to display in our view
 	$scope.message = 'Welcome to my Workout server!';
-});
+  }]);
 
-hostApp.controller('aboutController', function($scope) {
-	$scope.message = 'This is the about page.';
-});
+// create the controller and inject Angular's $scope
+hostApp.controller('mainController', ['$scope', '$routeParams',
+  function($scope, $routeParams) {
+    	// create a message to display in our view
+	$scope.message = 'Welcome to my Workout server!';
+  }]);
