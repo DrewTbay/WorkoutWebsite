@@ -1,13 +1,15 @@
 <div class="jumbotron text-center">
 	<h1>Eccentric Upper</h1>
 	<form id="eccentricUpperForm">
-		<div>
-			1. Standard Push Ups: 
-		</div>
-		<div>
-			<select name="standardPushUps" id="standardPushUps"
-			ng-options="option.name for option in standardPushups.availableOptions track by option.id"
-			ng-model="standardPushups.selectedOption"></select>
+		<div style="width: 100%">
+			<div style="display: table-cell;">
+				1. Standard Push Ups: 
+			</div>
+			<div style="isplay: table-cell;">
+				<select name="standardPushUps" id="standardPushUps"
+				ng-options="option.name for option in standardPushups.availableOptions track by option.id"
+				ng-model="standardPushups.selectedOption"></select>
+			</div>
 		</div>
 		<div>
 			2. Standard Pull Ups: 
