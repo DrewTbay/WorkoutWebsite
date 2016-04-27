@@ -5,6 +5,7 @@
 var hostApp = angular.module('hostApp', [
 	'ngRoute',
 	'workoutControllers'
+	'eccentricUpperController'
 ]);
 
 // configure our routes

@@ -13,10 +13,4 @@ workoutControllers.controller('aboutController', ['$scope', '$routeParams',
 		// create a message to display in our view
 		$scope.message = 'The About Page';
 	}]);
-
-// create the controller and inject Angular's $scope
-workoutControllers.controller('eccentricUpperController', ['$scope', '$routeParams',
-	function($scope, $routeParams) {
-		$scope.message = "This is a test.";
-	}]);
  
