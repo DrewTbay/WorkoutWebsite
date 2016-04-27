@@ -26,7 +26,7 @@ hostApp.config(['$routeProvider',
 		
 		// route for the Eccentric Upper page
 		when('/eccentricUpper', {
-			templateUrl : 'templatePages/eccentricUpper.html',
+			templateUrl : 'app/templatePages/eccentricUpper.html',
 			controller : 'eccentricUpperController'
 		}).
 		otherwise({
