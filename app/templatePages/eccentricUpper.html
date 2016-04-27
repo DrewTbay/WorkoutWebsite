@@ -4,8 +4,14 @@
 		<div>
 			1. Standard Push Ups: 
 			<select name="standardPushUps" id="standardPushUps"
-			ng-options="option.name for option in data.availableOptions track by option.id"
-			ng-model="data.selectedOption"></select>
+			ng-options="option.name for option in standardPushups.availableOptions track by option.id"
+			ng-model="standardPushups.selectedOption"></select>
+		</div>
+		<div>
+			2. Standard Pull Ups: 
+			<select name="standardPullUps" id="standardPullUps"
+			ng-options="option.name for option in standardPullUps.availableOptions track by option.id"
+			ng-model="standardPullUps.selectedOption"></select>
 		</div>
 	</form>
 	
