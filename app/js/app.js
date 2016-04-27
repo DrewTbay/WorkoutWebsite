@@ -4,7 +4,7 @@
 // also include ngRoute for all our routing needs
 var hostApp = angular.module('hostApp', [
 	'ngRoute',
-	'workoutControllers'
+	'workoutControllers',
 	'eccentricUpperControllers'
 ]);
 
