@@ -3,7 +3,13 @@
 var eccentricUpperControllers = angular.module('eccentricUpperControllers', []);
 
 // create the controller and inject Angular's $scope
-eccentricUpperControllers.controller('eccentricUpperController', ['$scope', '$routeParams',
-	function($scope, $routeParams) {
-		$scope.message = "This is a test.";
-	}]);
+eccentricUpperControllers.controller('eccentricUpperController', ['$scope', function($scope) {
+	$scope.data = {
+		availableOptions: [
+			{id: '1', name: 'Option A'},
+			{id: '2', name: 'Option B'},
+			{id: '3', name: 'Option C'}
+		],
+		selectedOption: {id: '3', name: 'Option C'} //This sets the default value of the select in the ui
+    };
+}]);
