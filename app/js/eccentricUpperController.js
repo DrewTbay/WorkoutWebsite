@@ -1,3 +1,5 @@
+
+//Controller for the Eccentric Upper page.
 var eccentricUpperControllers = angular.module('eccentricUpperControllers', []);
 
 // create the controller and inject Angular's $scope
