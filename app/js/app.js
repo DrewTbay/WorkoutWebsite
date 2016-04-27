@@ -5,7 +5,7 @@
 var hostApp = angular.module('hostApp', [
 	'ngRoute',
 	'workoutControllers'
-	'eccentricUpperController'
+	'eccentricUpperControllers'
 ]);
 
 // configure our routes
@@ -26,7 +26,7 @@ hostApp.config(['$routeProvider',
 		
 		// route for the Eccentric Upper page
 		when('/eccentricUpper', {
-			templateUrl : 'app/workouts/eccentricUpper/eccentricUpper.html',
+			templateUrl : 'templatePages/eccentricUpper.html',
 			controller : 'eccentricUpperController'
 		}).
 		otherwise({
