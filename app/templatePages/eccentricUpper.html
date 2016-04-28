@@ -2,11 +2,15 @@
 	<h1>Eccentric Upper</h1>
 	<form id="eccentricUpperForm">
 		<div>
-			<div>
-				<p>1. Standard Push Ups: </p>
-				<select style="eccentricWorkout" name="standardPushUps" id="standardPushUps"
-				ng-options="option.name for option in standardPushups.availableOptions track by option.id"
-				ng-model="standardPushups.selectedOption"></select>
+			<div style="display: table; margin: 0 auto;">
+				<div style="display: table-cell;">
+					<p>1. Standard Push Ups:</p>
+				</div>
+				<div style="display: table-cell;">
+					<select style="eccentricWorkout" name="standardPushUps" id="standardPushUps"
+					ng-options="option.name for option in standardPushups.availableOptions track by option.id"
+					ng-model="standardPushups.selectedOption"></select>
+				</div>
 			</div>
 			<div>
 				<p>2. Standard Pull Ups: </p>
