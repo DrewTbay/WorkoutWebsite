@@ -4,7 +4,7 @@
 		<div>
 			<div style="display: table; margin: 0 auto;">
 				<div style="display: table-cell;">
-					<p>1. Standard Push Ups:</p>
+					<p>1. Standard Push Ups: </p>
 				</div>
 				<div style="display: table-cell;">
 					<select style="eccentricWorkout" name="standardPushUps" id="standardPushUps"
@@ -12,11 +12,15 @@
 					ng-model="standardPushups.selectedOption"></select>
 				</div>
 			</div>
-			<div>
-				<p>2. Standard Pull Ups: </p>
-				<select name="standardPullUps" id="standardPullUps"
-				ng-options="option.name for option in standardPullUps.availableOptions track by option.id"
-				ng-model="standardPullUps.selectedOption"></select>
+			<div style="display: table; margin: 0 auto;">
+				<div style="display: table-cell;">
+					<p>2. Standard Pull Ups: </p>
+				</div>
+				<div style="display: table-cell;">
+					<select name="standardPullUps" id="standardPullUps"
+					ng-options="option.name for option in standardPullUps.availableOptions track by option.id"
+					ng-model="standardPullUps.selectedOption"></select>
+				</div>
 			</div>
 		</div>
 	</form>
