@@ -9,57 +9,34 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
-	<script src="https://code.angularjs.org/1.5.2/angular-route.js"></script>
+	<!--Angular CDNs-->
+	<script src="https://code.angularjs.org/2.0.0-beta.9/angular2.min.js"></script>
+	<script src="https://code.angularjs.org/2.0.0-beta.9/router.min.js"></script>
 	
 	<!--CSS CDNs-->
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
 
-	
-	<script src="/app/js/app.js"></script>
-	<!--Controllers-->
-	<script src="/app/js/workoutController.js"></script>
-	<script src="/app/js/eccentricUpperController.js"></script>
 </head>
 
-<!-- define angular controller -->
-<body>
-	<header>
-		<div class="navbar navbar-default" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="nav navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class = "icon-bar"></span>
-						<span class = "icon-bar"></span>
-						<span class = "icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#/">Workout Web Server</a>
-				</div>
-				<!-- Main Website Menu -->
-				<div class="collapse navbar-collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#/"><i class="fa fa-home"></i>Home</a></li>
-						<li><a href="#about"><i class="fa fa-shield"></i>About</a></li>
-						<li><a href="#eccentricUpper"><i class="fa fa-shield"></i>Eccentric Upper</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</header>
 
-	
-	<!-- Main Content -->
-	<div id="main">
-		<!-- angular templating -->
-		<div ng-view>
-		</div>
-	</div>
+    <!-- 2. Configure SystemJS -->
+    <script>
+      System.config({
+        packages: {        
+          app: {
+            format: 'register',
+            defaultExtension: 'js'
+          }
+        }
+      });
+      System.import('app/main')
+            .then(null, console.error.bind(console));
+    </script>
+  </head>
 
-	<!-- Footer -->
-	<footer class="text-center">
-		@DrewTbay 2016
-	</footer>
-
-</body>
+  <!-- 3. Display the application -->
+  <body>
+    <my-app>Loading...</my-app>
+  </body>
 </html>
