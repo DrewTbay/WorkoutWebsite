@@ -21,19 +21,10 @@
 
 
     <!-- 2. Configure SystemJS -->
-    <script>
-      System.config({
-        packages: {        
-          app: {
-            format: 'register',
-            defaultExtension: 'js'
-          }
-        }
-      });
-      System.import('app/main')
-            .then(null, console.error.bind(console));
-    </script>
-  </head>
+	<script>
+		System.import('angularjs2');
+	</script>
+</head>
 
   <!-- 3. Display the application -->
   <body>
