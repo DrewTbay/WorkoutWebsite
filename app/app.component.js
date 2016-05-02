@@ -2,7 +2,7 @@
   app.AppComponent =
     ng.core.Component({
       selector: 'my-app',
-      templateurl: 'app/templatePages/eccentricUpper.html'
+      template: '<h1>My First Angular 2 App</h1>'
     })
     .Class({
       constructor: function() {}
