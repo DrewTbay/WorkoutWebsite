@@ -1,57 +1,32 @@
-<!DOCTYPE html>
 <html>
-	<head>
-		<title>Angular 2 QuickStart</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<!--Javascript CDNs
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-		
-		<!--CSS CDNs
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />-->
-		
-    <!-- 1. Load libraries -->
-	<script src="https://code.angularjs.org/tools/system.js"></script>
-	 <script src="https://code.angularjs.org/2.0.0-beta.17/angular2.dev.js"></script>
-	<script src=" https://code.angularjs.org/2.0.0-beta.17/router.dev.js"></script>
-    <!-- IE required polyfills (from CDN), in this exact order -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.0/es6-shim.min.js"></script>
-	
-	<script src="https://code.angularjs.org/2.0.0-beta.17/angular2-all.umd.js"></script>
+  <head>
+    <title>Angular 2 QuickStart JS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
 
-	<!-- 2. Configure SystemJS -->
-	<script src='app/main.js'></script>
+    <!-- 1. Load libraries -->
+    <!-- IE required polyfill -->
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+
+    <script src="node_modules/rxjs/bundles/Rx.umd.js"></script>
+    <script src="node_modules/@angular/core/core.umd.js"></script>
+    <script src="node_modules/@angular/common/common.umd.js"></script>
+    <script src="node_modules/@angular/compiler/compiler.umd.js"></script>
+    <script src="node_modules/@angular/platform-browser/platform-browser.umd.js"></script>
+    <script src="node_modules/@angular/platform-browser-dynamic/platform-browser-dynamic.umd.js"></script>
+
+    <!-- 2. Load our 'modules' -->
     <script src='app/app.component.js'></script>
-    
+    <script src='app/main.js'></script>
+
   </head>
-	
-	<body>
-	<!--	<header>
-			<div class="navbar navbar-default" role="navigation">
-				<div class="container">
-					<div class="navbar-header">
-						<button type="button" class="nav navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-							<span class = "icon-bar"></span>
-							<span class = "icon-bar"></span>
-							<span class = "icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="#/">Workout Web Server</a>
-					</div>
-					<div class="collapse navbar-collapse">
-						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#/"><i class="fa fa-home"></i>Home</a></li>
-							<li><a href="#about"><i class="fa fa-shield"></i>About</a></li>
-							<li><a href="#eccentricUpper"><i class="fa fa-shield"></i>Eccentric Upper</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</header>-->
-	
-		<div>
-			<my-app>Loading...</my-app>
-		</div>
-	</body>
+
+  <!-- 3. Display the application -->
+  <body>
+    <my-app>Loading...</my-app>
+  </body>
+
 </html>
